@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+theme:
+plugins:
+- jekyll-menus
+- jekyll-seo-tag
