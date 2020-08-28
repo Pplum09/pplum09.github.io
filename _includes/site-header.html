@@ -22,6 +22,12 @@
         </label>
 
         <div class="trigger">
+          <div class="dropdown">
+            <a class="page-link">Projects</a>
+            <div class="dropdown-content">
+              <a href="{{site.url}}/path-finder/">PathFinder</a>
+            </div>
+          </div>
           {% for ref in page_refs %}
             {% assign my_page = site.pages | where: "ref", ref | first %}
             {% if my_page.title %}
