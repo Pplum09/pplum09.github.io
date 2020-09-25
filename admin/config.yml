@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: github-gateway
   repo: pplum09/pplum09.github.io
   branch: master # Branch to update (optional; defaults to master)
   site_domain: pplum.io
