@@ -10,6 +10,8 @@ published: true
 I feel like I am the type of person that takes much longer than everyone else to be able to understand things.
 When it comes to tech interviews, I feel that I always need to over prepare because I have a hard time thinking things through.
 So for those of you out there that are just about to get into the interviewing world, here is my aggressive stanch on how I prepare for interviews.
+I've also provided a video version of this post for those of you (like me) that would rather read than listen.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dLpp0pA5GQQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Research the Interviewer
 I said that I take an aggressive approach right?
