@@ -7,4 +7,4 @@
 #
 layout: home
 ---
-Welcome to the start of my developer site. The site is a little empty right now, but please come back later to see the site when it's ready!
+<!--Welcome to the start of my developer site. The site is a little empty right now, but please come back later to see the site when it's ready!-->
