@@ -7,7 +7,6 @@ author: Izzy
 published: true
 ---
 
-### Sync Vs Async
 Asynchronous functions are confusing af to students that have just gone through their Programming 201 course. My introduction into javascript was through trying to use socket.io in NodeJS. The first time I saw an asynchronous function, I thought it was wrong. Here's my gift back to the programming noobs that were just as confused as I was.
 
 #### Synchronous Programming

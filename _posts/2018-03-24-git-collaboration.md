@@ -7,7 +7,6 @@ author: Izzy
 published: true
 ---
 
-### Story
 Patrick, a software engineer on your team, has just submitted a pull request containing the newest feature to the product that your team owns. Patrick chooses to leave the office because he's done amazing work and deserves to spend some time with his dog. You later notice that he has misspelled the name of the product in the pull request and you start freaking out because it's going to deployed in the next hour. Frantically googling how to commit to a pull request has taken you here.
 
 ### Hub
