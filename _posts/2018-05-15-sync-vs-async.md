@@ -2,15 +2,19 @@
 layout: post
 title: Sync Vs Async
 date: 2018-05-15 05:00:00
-tags: ajax asynchronous synchronouse functions
+tags: ajax asynchronous synchronous functions
 author: Izzy
 published: true
 ---
 
-Asynchronous functions are confusing af to students that have just gone through their Programming 201 course. My introduction into javascript was through trying to use socket.io in NodeJS. The first time I saw an asynchronous function, I thought it was wrong. Here's my gift back to the programming noobs that were just as confused as I was.
+Coming out of cs 201, asynchronous functions were super confusing to me.
+My introduction into javascript was through trying to use socket.io in NodeJS.
+The first time I saw an asynchronous function, I thought that the documentation was surely wrong.
+Here's my gift back to the programming noobs that were just as confused as I was.
 
 #### Synchronous Programming
-When students first learn how to program, they'll most likely be taught how to program in a synchronous manner. This means that instructions in a program run sequentially, from top to botto, where each line will execute only when the previous line has finished.
+When students first learn how to program, they're most likely taught how to program in a synchronous manner.
+This means that instructions in a program run sequentially, from top to bottom, where each line will execute only when the previous line has finished.
 
 ```javascript
 function add(x, y) {
@@ -24,10 +28,12 @@ var ans = add(x, y);
 console.log(ans); // 5
 ```
 
-In the example above, ```console.log()``` will not be run until the function ```add()``` completes. You can see that the function will wait 5 seconds before continuing with the rest of the instructions and completing. Note that while the program waits for ```add()``` to return, the program can do nothing else and is therefor __blocked__.
+In the example above, ```console.log()``` will not be run until the function ```add()``` completes.
+You can see that the function will wait 5 seconds before continuing with the rest of the instructions.
+Note that while the program waits for ```add()``` to return, the program can do nothing else and is therefore __blocked__.
 
 #### Asynchronous Programming
-There may be times where you want to do other things while you are waiting for a asynchronous function to return. A great example is how you are able to make comments on Youtube videos while the video is still loading. If the video loading process was synchronous, then you wouldn't be able to do that.
+There may be times where you want to do other things while you are waiting for an asynchronous function to return. A great example is how you are able to make comments on Youtube videos while the video is still loading. If the video loading process was synchronous, then you wouldn't be able to do that.
 
 ```javascript
 function async_add(x, y) {
@@ -41,7 +47,8 @@ var ans = async_add(x, y);
 console.log(ans); // undefined
 ```
 
-The javascript continues to run as if ```async_add()``` had already returned, even though it hasn't, and because it hasn't yet, ```result``` is not given a value in time for it to be defined by the time the print statement is ran. So then how the hell will the program know when ```async_add()``` is done and then print the answer?
+The javascript continues to run as if ```async_add()``` had already returned, even though it hasn't, and because it hasn't yet, ```result``` is not given a value in time for it to be defined by the time the print statement is ran.
+So then how will the program know when ```async_add()``` is done and then print the answer?
 
 #### Callback Functions
 Callbacks are the last instruction run in an async function. Whatever is defined within the callback is what we want to do with the result of the asynchronous call.
@@ -76,7 +83,7 @@ In the case with the function above, the parameters mappings are shown below.
 
 In this example, ```addition_that_takes_five_seconds()``` is a pseudo code representation of an http request to a server that takes a long time to respond. Once the wait is over, ```result``` is populated and we can then run the callback with the ```result``` param passed in. Now from within the callback, ```add_cb```, we can print out the result.
 
-Quick side note that ```var x = functionName``` will copy over ```functionName``` to the ```x``` alias. However calling the function with the parenthesis, ```var x = functionName()```, will __execute__ it. That is why you able to just pass in the ```add_cb``` function by name to the ```async_add()``` function and have it be excuted from within.
+Quick side note that ```var x = functionName``` will copy over ```functionName``` to the ```x``` alias. However calling the function with the parenthesis, ```var x = functionName()```, will __execute__ it. That is why you are able to just pass in the ```add_cb``` function by name to the ```async_add()``` function and have it be executed from within.
 
 #### Inline Callback Functions
 So because javascript is confusing af, you can also just define the callback function in the spot where you pass it in as a param.
@@ -109,6 +116,8 @@ $.get('someApp.com/tweets/', function(result) {
     alert('omg here are all of the tweets:' + results);
 });
 
+
+array.async(x => x.result + 2);
 ```
 
 With that explanation out of the way, let's now talk about where you'll probably see this the most.
@@ -153,4 +162,9 @@ function do_http_request(url, callback) {
 }
 ```
 
-All right hopefully that AJAX example wasn't super confusing. With that being said, congrats! You are now the master of basic callback functions. If you find any mistakes in this doc, create an issue [here](https://github.com/Pplum09/pplum09.github.io).
+All right hopefully that AJAX example wasn't super confusing.
+With that being said, congrats!
+You are now the master of basic callback functions.
+If you find any mistakes in this doc, create an issue [here](https://github.com/Pplum09/pplum09.github.io).
+
+If you're here to learn about asynchronous functions, then maybe you might also be interested in how I approach [git collaboration](https://pplum.io/2018/03/24/git-collaboration.html)
