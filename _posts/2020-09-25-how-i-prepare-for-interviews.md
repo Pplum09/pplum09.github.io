@@ -10,13 +10,13 @@ published: true
 I feel like I am the type of person that takes much longer than everyone else to be able to understand things.
 When it comes to tech interviews, I feel that I always need to over prepare because I have a hard time thinking things through.
 So for those of you out there that are just about to get into the interviewing world, here is my aggressive stanch on how I prepare for interviews.
-I've also provided a video version of this post for those of you (like me) that would rather read than listen.
+I've also provided a video version of this post for those of you (like me) that would rather listen than read.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dLpp0pA5GQQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Research the Interviewer
 I said that I take an aggressive approach right?
 Knowing the ins and outs of the people in the company help you to understand what their goals might be.
-Research the leadership team on who they are and what their credentials are.
+Research the leadership team on what their interests and credentials are.
 The idea is to know more about your interviewer (and their bosses) than they know about you.
 I look up at least 10 people in the company on LinkedIn, Facebook, Instagram, and Twitter.
 If they are into coding IoT devices in their spare time, then that is something that I want to know.
@@ -35,8 +35,8 @@ Most likely they were the ones that built it.
 
 ### Probe the first interview to prepare for the second
 The first call that you get from a company is usually from a non-technical recruiter.
-Their job is to gauge you for company fit (behavioral) and if you sounded like you knew about their buzzwords.
-In that interivew, I recommend that you ask them what are the exact technology stacks that the team uses.
+Remember that engineers have their own work to do and so they are really trying to decide if it is worth their time to even see you.
+In that interview, I recommend that you ask them what are the exact technology stacks that the team uses.
 
 #### Example Questions
 - Since python was on the job req, do you guys have a django backend?
