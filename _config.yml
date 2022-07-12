@@ -1,5 +1,5 @@
 url: "https://pplum.io"
-theme:
+theme: jekyll-theme-cayman-blog
 plugins:
 - jekyll-menus
 - jekyll-seo-tag
